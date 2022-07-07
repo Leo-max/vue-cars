@@ -1,0 +1,38 @@
+.header-back {
+    position: relative;
+    padding-bottom: 100px;
+}
+.back {
+    position: absolute;
+    top: 21px;
+    left: 0;
+    right: 0;
+    height: 40px;
+    // background-color: #fff;
+}
+.title {
+    font-size: 16px;
+    margin-left: 33px;
+    color: #fff;
+}
+.icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    // background-color: #fff;
+    @include webkit(border-radius, 0px);
+    &:before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 16px;
+        height: 16px;
+        top: 2px;
+        left: 0px;
+        border-top: 1px solid #00a3ff;
+        border-left: 1px solid #00a3ff;
+        @include webkit(transform, rotate(-45deg));
+    }
+}

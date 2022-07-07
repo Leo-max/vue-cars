@@ -1,0 +1,90 @@
+@import "./sassConfig.scss";
+@import "./normalize.scss";
+@import "./icon.scss";
+
+
+
+// common 
+.color-main { color: $color-main }
+
+.text-align { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+// float
+.pull-right { float: right; }
+.pull-left { float: left; }
+// font-size
+.fs-17 { font-size: 18px; }
+.fs-12 { font-size: 12px; }
+// padding
+.pd-12 { padding: 12px 0; }
+// clearfix
+.clearfix { @include clearfix; }
+// position
+.p-r { position: relative; }
+.p-a {position: absolute;}
+//button
+.select-car-btn {
+    display: block;
+    width: 240px;
+    height: 84px;
+    border-radius: 100px;
+    line-height: 84px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 300;
+    color: #fff;
+    margin: 0 17px;
+    background-color: $color-main;
+}
+.user-container {
+    padding: 0 30px;
+}
+// user router-links
+.group-links {
+    a {
+        position: relative;
+        display: block;
+        margin: 0 -30px;
+        height: 64px;
+        line-height: 64px;
+        padding: 0 30px;
+        color: rgb(255, 255, 255, .4);
+        border-bottom: 1px solid rgba(255, 255, 255, .3);
+        font-size: 15px;
+    }
+    .icon {
+        width: 29px;
+        height: 25px;
+        margin: 0 6px -6px 0px;
+        background-color: #34393f;
+    }
+    .arrow:after {
+        content: '';
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        width: 10px;
+        height: 10px;
+        margin-top: -5px;
+        border-top: 1px solid #fff;
+        border-right: 1px solid #fff;
+        @include webkit(transform, rotate(45deg));
+        opacity: .1;
+    }
+}
+.logout { 
+    position: absolute;
+    left: 50%;
+    bottom: 60px;
+    width: 165px;
+    height: 58px;
+    margin-left: -82px;
+    background: #2d3339;
+    border-radius: 100px;
+    font-size: 18px;
+    color: #fff;
+    line-height: 58px;
+    border: none;
+    outline: none;
+}
